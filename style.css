@@ -1,0 +1,92 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgray;
+    position: relative;
+}
+
+#app{
+    background-color: lightgray;
+    width: 650px;
+    height: 550px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controls{
+    height: 10%;
+    background-color: lightgray;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.canvas{
+    height: 90%;
+    width: 100%;
+    background-color: white;
+}
+
+#title{
+    color: brown;
+    font-weight: 600;
+    font-size: 18px;
+    width: 80px;
+}
+
+.contols .type, .controls .size, .contols .color{
+    margin: 0px 10px;
+}
+
+.controls .type input{
+    display: none;
+}
+
+.controls .type label{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+.actions{
+    padding: 30px;
+}
+
+#save-canvas{
+    margin: 15px;
+    width: 50px;
+}
+
+#reset-canvas{
+    width: 50px;
+}
+
+.controls .type input:checked + label{
+    background-color: #111;
+    color: #eee;
+    border-radius: 50%;
+}
+
+.controls .type label{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 2px;
+}
